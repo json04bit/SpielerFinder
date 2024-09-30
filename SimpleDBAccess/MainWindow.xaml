@@ -1,0 +1,17 @@
+﻿<Window x:Class="SimpleDBAccess.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleDBAccess"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+
+    <Grid Background="#FFDC052D">
+        <Label x:Name="RückennummerEingabeaufforderung" Content="Rückennummer:" FontSize="24" HorizontalAlignment="Left" Margin="22,131,0,0" VerticalAlignment="Top" Height="70" Width="202" Background="#FFDC052D" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="SpielerSuchen" Content="Finde Spieler" HorizontalAlignment="Left" Margin="388,131,0,0" VerticalAlignment="Top" Width="270" Click="Button_get_data" Height="70" Background="#FF0066B2" FontSize="20" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="AusgabeSpieler" HorizontalAlignment="Left" Height="61" Margin="22,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="636" FontSize="36"/>
+        <Label x:Name="GesuchterSpieler" Content="Das ist der gesuchte Spieler:" HorizontalAlignment="Left" Height="50" Margin="22,288,0,0" VerticalAlignment="Top" Width="520" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="RückennummerEingabe" TextWrapping="Wrap" Margin="224,131,350,283" FontSize="36" Background="White"/>
+    </Grid>
+</Window>
